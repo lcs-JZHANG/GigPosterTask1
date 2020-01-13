@@ -45,8 +45,35 @@ canvas.drawEllipse(at: Point(x:40*times, y: ytimes*40), width: 35, height: 35)
 }
 }
 canvas.fillColor = offWhite
-for _ in 0...8
-for y in 0...8*y(
+for y in 0...8{
+for x in 0...8-y {
+
+canvas.drawEllipse(at: Point(x:40+40*y, y:360-40*y-40*x ), width: 35, height: 35)
+    }
+    }
+
+canvas.drawText(message: "pixies", at: Point(x: 20, y: 408), size:66)
+
+canvas.drawText(message: "saturday", at: Point(x: 20, y: 552), size:10)
+
+canvas.drawText(message: "december 13 1986", at: Point(x: 20, y: 535), size:10)
+
+canvas.drawText(message: "9 pm over 21", at: Point(x: 20, y: 517), size:10)
+
+canvas.drawText(message: "at the rat", at: Point(x: 276, y: 552), size:10)
+
+canvas.drawText(message: "528 commonwealth", at: Point(x: 276, y: 535), size:10)
+
+canvas.drawText(message: "boston, mass.", at: Point(x: 276, y: 517), size:10)
+
+canvas.textColor = offWhite
+
+canvas.drawText(message: "big dipper", at: Point(x: 276, y: 420), size:12)
+
+canvas.drawText(message: "throwign muses", at: Point(x: 276, y: 435), size:12)
+
+canvas.drawText(message: "with", at: Point(x: 276, y: 450), size:12)
+
 /*:
  ## Use Source Control
  
@@ -56,4 +83,3 @@ for y in 0...8*y(
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
 PlaygroundPage.current.liveView = canvas
-
