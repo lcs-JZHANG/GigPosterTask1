@@ -27,10 +27,26 @@ let canvas = Canvas(width: 400, height: 600)
 // COLORS
 let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
+let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
 
 // Begin your solution here...
 
+canvas.fillColor = limeGreen
+canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 
+canvas.fillColor = black
+canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 400)
+
+canvas.fillColor = limeGreen
+canvas.drawShapesWithBorders = false
+for ytimes in 0...10{
+for times in 0...12{
+canvas.drawEllipse(at: Point(x:40*times, y: ytimes*40), width: 35, height: 35)
+}
+}
+canvas.fillColor = offWhite
+for _ in 0...8
+for y in 0...8*y(
 /*:
  ## Use Source Control
  
